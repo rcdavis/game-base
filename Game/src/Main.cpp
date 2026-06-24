@@ -1,7 +1,10 @@
 
-#include <iostream>
+#include "Utils/Log.h"
 
 int main(int argc, char** argv) {
-	std::cout << "Hello, Base Game!\n";
+	Log::Init("Game");
+
+	LOG_INFO("Hello, Base Game!");
+
 	return 0;
 }
